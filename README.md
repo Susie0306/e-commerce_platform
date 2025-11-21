@@ -58,19 +58,6 @@
 
     自动计算: 实时计算购物车商品总价。
 
-📂 目录结构
-
-src/
-├── assets/ # 静态资源
-├── components/ # 全局公共组件 (如 Navbar, CartDrawer)
-├── mock/ # 模拟数据与 API 请求逻辑 (适配 DummyJSON)
-├── pages/ # 页面级组件 (ProductList, ProductDetail)
-├── sections/ # 页面内部的功能区块 (如 FilterSidebar, ProductGrid)
-├── stores/ # Zustand 全局状态管理 (cartStore, productStore)
-├── types/ # TypeScript 类型定义
-├── App.tsx # 根组件与路由配置
-└── main.tsx # 入口文件
-
 🚀 快速开始
 
 1. 克隆项目
