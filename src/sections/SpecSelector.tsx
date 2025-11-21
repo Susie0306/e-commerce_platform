@@ -1,5 +1,5 @@
-import { Tag, Space } from 'antd'
-import type { Product } from '../stores/productStore'
+import { Tag, Space } from "antd";
+import type { Product } from "../types/product"; // 修改了这里的引用路径
 
 export default function SpecSelector({ product }: { product: Product }) {
   return (
@@ -10,12 +10,12 @@ export default function SpecSelector({ product }: { product: Product }) {
           <Tag key={s}>{s}</Tag>
         ))}
       </Space>
-      <div style={{ margin: '12px 0 8px' }}>颜色</div>
+      <div style={{ margin: "12px 0 8px" }}>颜色</div>
       <Space wrap>
         {product.colors.map((c) => (
           <Tag key={c}>{c}</Tag>
         ))}
       </Space>
     </div>
-  )
+  );
 }
