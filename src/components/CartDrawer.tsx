@@ -1,5 +1,7 @@
 import { Drawer, List, Button } from "antd";
-import { useCartStore, CartItem } from "../stores/cartStore";
+
+import { useCartStore } from "../stores/cartStore";
+import type { CartItem } from "../stores/cartStore";
 
 export default function CartDrawer() {
   const open = useCartStore((s) => s.open);

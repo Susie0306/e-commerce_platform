@@ -114,7 +114,7 @@ export const useProductStore = create<ProductState>((set, get) => ({
         (p) => !id || (p.id !== id && p.category === target?.category)
       )
       .sort((a, b) => b.sales - a.sales);
-    return list.slice(0, 6);
+    return list.slice(0, 4);
   },
 }));
 

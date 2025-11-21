@@ -101,7 +101,7 @@ export default function ProductDetail() {
             </Card>
           </Col>
           <Col xs={24} md={10}>
-            <Card>
+            <Card style={{ height: "100%" }}>
               <h2 style={{ marginBottom: 8 }}>{product.title}</h2>
               <div style={{ marginBottom: 12 }}>价格：¥{product.price}</div>
               <div style={{ marginBottom: 8 }}>标签：</div>
@@ -197,7 +197,10 @@ export default function ProductDetail() {
                       <img
                         src={p.thumbnail}
                         alt={p.title}
-                        style={{ height: 140, objectFit: "cover" }}
+                        style={{
+                          height: 300,
+                          objectFit: "cover",
+                        }}
                       />
                     }
                   >
